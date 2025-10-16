@@ -1,0 +1,21 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* Remove quaisquer estilos padrão que possam estar interferindo */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* deixa scroll vertical normal */
+  overflow-y: auto;
+}

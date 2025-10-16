@@ -1,0 +1,178 @@
+/* === CONTAINER GERAL === */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  background: linear-gradient(135deg, #f0f4f8, #dbe4ee);
+  padding: 40px 20px;
+  box-sizing: border-box;
+  min-height: 100%; /* muda de 100vh para 100% */
+}
+
+/* === CARD DO FORMULÁRIO === */
+.register-form-wrapper {
+  width: 100%;
+  max-width: 500px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.5s ease-in-out;
+  margin: 40px auto;
+}
+
+/* === CABEÇALHO === */
+.register-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #f1f1f1;
+  padding-bottom: 12px;
+  margin-bottom: 15px;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.logo-placeholder {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0b3d61;
+  letter-spacing: 1px;
+}
+
+/* === TÍTULOS === */
+.register-form-wrapper h2 {
+  text-align: center;
+  font-size: 22px;
+  color: #222;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.register-form-wrapper h4 {
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+/* === FORMULÁRIO === */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="tel"] {
+  width: 100%;
+  padding: 9px 11px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background-color: #f8f9fb;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #e86f3b;
+  background-color: #fff;
+  box-shadow: 0 0 0 2px rgba(232, 111, 59, 0.2);
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+/* === TERMOS === */
+.terms-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 15px 0 25px 0;
+  font-size: 12px;
+  color: #444;
+}
+
+.terms-group input[type="checkbox"] {
+  margin-top: 2px;
+  accent-color: #e86f3b;
+}
+
+/* === BOTÃO === */
+.btn-secondary {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(135deg, #e86f3b, #ff9b55);
+  color: white;
+  box-shadow: 0 3px 8px rgba(232, 111, 59, 0.3);
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(135deg, #ff8249, #ffa86d);
+  transform: translateY(-1px);
+}
+
+/* === ANIMAÇÃO SUAVE === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === SCROLL GLOBAL === */
+html, body {
+  height: auto; /* deixa crescer conforme conteúdo */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* === RESPONSIVIDADE === */
+@media (max-width: 600px) {
+  .register-container {
+    padding: 20px 10px;
+  }
+  
+  .register-form-wrapper {
+    padding: 25px 15px;
+    margin: 20px auto;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .register-form-wrapper h2 {
+    font-size: 18px;
+  }
+  
+  .register-form-wrapper h4 {
+    font-size: 12px;
+  }
+}

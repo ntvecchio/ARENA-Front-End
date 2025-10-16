@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+/* ===== RESET BÁSICO ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+}
+
+/* ===== CONTAINER PRINCIPAL ===== */
+.login-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* ===== PAINEL ESQUERDO ===== */
+.left-panel {
+  width: 65%;
+  background: linear-gradient(160deg, #0b4e7a, #338a6a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.runner-graphic {
+  text-align: center;
+  padding: 40px;
+}
+
+.runner-graphic h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.runner-graphic p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* ===== PAINEL DIREITO ===== */
+.right-panel {
+  width: 35%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 350px;
+}
+
+/* ===== LOGO ===== */
+.logo-container {
+  height: 60px;
+  width: 180px;
+  background: #0b4e7a;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+/* ===== TÍTULO ===== */
+.login-form h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* ===== FORMULÁRIO ===== */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #0b4e7a;
+}
+
+/* ===== OPÇÕES ===== */
+.options-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  color: #555;
+}
+
+.remember-me input {
+  margin-right: 6px;
+}
+
+.forgot-password {
+  color: #0b4e7a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* ===== BOTÕES ===== */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #0b4e7a;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #09324e;
+}
+
+.btn-secondary {
+  background-color: #e86f3b;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #d85f29;
+}
+
+/* ===== SEPARADOR ===== */
+.separator {
+  text-align: center;
+  color: #aaa;
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 1024px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .left-panel {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .right-panel {
+    width: 100%;
+    height: 60vh;
+  }
+}
