@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LoginPage.css';
+import Logo from '../../assets/ovn.png'
 
 function LoginPage() {
   const navigate = useNavigate();
@@ -37,6 +38,9 @@ function LoginPage() {
 
         <div className="right-panel">
           <div className="login-form">
+            <div className="logo-container">
+              <img src={Logo} alt="Logo do site" className="login-logo" />
+            </div>
             <h2>Entre na sua conta</h2>
             <form onSubmit={handleSubmit}>
               <div className="form-group">

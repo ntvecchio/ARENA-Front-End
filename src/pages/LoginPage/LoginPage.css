@@ -10,15 +10,17 @@ html, body {
   width: 100%;
   height: 100%;
   font-family: 'Montserrat', sans-serif;
-  overflow: hidden;
+  background-color: #ffffff;
 }
 
+/* === CONTAINER GERAL === */
 .login-container {
   display: flex;
   width: 100%;
   height: 100vh;
 }
 
+/* === LADO ESQUERDO === */
 .left-panel {
   width: 65%;
   background: linear-gradient(160deg, #0b4e7a, #338a6a);
@@ -26,31 +28,47 @@ html, body {
   justify-content: center;
   align-items: center;
   color: white;
-}
-
-.runner-graphic {
   text-align: center;
   padding: 40px;
 }
 
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.login-logo {
+  display: block;
+  margin: 0 auto;
+  width: 150px; /* ajuste conforme o tamanho que quiser */
+  height: auto;
+  position: relative;
+  top: 20px;
+  left: -3px;
+}
+
+
 .runner-graphic h1 {
-  font-size: 36px;
+  font-size: 2.5rem;
   margin-bottom: 15px;
   font-weight: 700;
 }
 
 .runner-graphic p {
-  font-size: 18px;
+  font-size: 1.1rem;
   opacity: 0.9;
 }
 
+/* === LADO DIREITO === */
 .right-panel {
   width: 35%;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 40px;
+  align-items: flex-start;
+  padding: 0px 40px;
 }
 
 .login-form {
@@ -58,28 +76,19 @@ html, body {
   max-width: 350px;
 }
 
-.logo-container {
-  height: 60px;
-  width: 180px;
-  background: #0b4e7a;
-  border-radius: 8px;
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-weight: 700;
-  font-size: 24px;
-}
+/* === LOGO === */
 
+
+/* === TÍTULO === */
 .login-form h2 {
   font-size: 24px;
   color: #333;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-weight: 600;
   text-align: center;
 }
 
+/* === CAMPOS === */
 .form-group {
   margin-bottom: 20px;
   text-align: left;
@@ -101,13 +110,16 @@ html, body {
   border-radius: 6px;
   background-color: #f9f9f9;
   font-size: 14px;
+  color: #333;
 }
+
 
 .form-group input:focus {
   outline: none;
   border-color: #0b4e7a;
 }
 
+/* === OPÇÕES === */
 .options-row {
   display: flex;
   justify-content: space-between;
@@ -136,6 +148,7 @@ html, body {
   text-decoration: underline;
 }
 
+/* === BOTÕES === */
 .btn {
   width: 100%;
   padding: 12px;
@@ -144,7 +157,8 @@ html, body {
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
 }
 
 .btn-primary {
@@ -168,10 +182,13 @@ html, body {
 .separator {
   text-align: center;
   color: #aaa;
-  margin: 15px 0;
+  margin: 5px 0;
   font-size: 14px;
 }
 
+/* === RESPONSIVIDADE === */
+
+/* Tablets e telas médias */
 @media (max-width: 1024px) {
   .login-container {
     flex-direction: column;
@@ -180,10 +197,54 @@ html, body {
   .left-panel {
     width: 100%;
     height: 40vh;
+    padding: 20px;
+  }
+
+  .runner-graphic h1 {
+    font-size: 2rem;
   }
 
   .right-panel {
     width: 100%;
     height: 60vh;
+    padding: 20px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+  html, body {
+    overflow-y: auto;
+  }
+
+  .login-container {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .left-panel {
+    display: none; /* Esconde a parte gráfica no mobile para foco no login */
+  }
+
+  .right-panel {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .login-form {
+    max-width: 100%;
+  }
+
+  .login-form h2 {
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 15px;
+  }
+
+  .separator {
+    margin: 10px 0;
   }
 }
