@@ -1,16 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ProfileSelectionPage.css';
-import './LoginPage/LoginPage.css'; // Reutilizando estilos
+import './LoginPage/LoginPage.css';
 
 function ProfileSelectionPage() {
   const navigate = useNavigate();
 
-  // Esta é a função corrigida e simplificada.
-  // Ela funciona para QUALQUER perfil que você passar para ela.
   const handleProfileSelect = (profileType) => {
-    // Nós usamos "template literals" (crases ``) para construir a URL dinamicamente.
-    // A variável profileType será substituída pelo valor do botão clicado ('clube', 'treinador', etc.)
     navigate(`/cadastro/${profileType}`);
   };
 
@@ -29,7 +25,6 @@ function ProfileSelectionPage() {
           <h2>Qual perfil você se encaixa:</h2>
 
           <div className="profile-options">
-            {/* Cada botão chama a mesma função, mas com um parâmetro diferente */}
             <button className="profile-option" onClick={() => handleProfileSelect('atleta')}>
               <span className="profile-icon"><i className="fas fa-person-running"></i></span>
               Atleta

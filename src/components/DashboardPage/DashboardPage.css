@@ -1,13 +1,10 @@
-/* === GERAL E FUNDO === */
 body {
   background-color: #f0f2f5;
   font-family: 'Montserrat', sans-serif;
   margin: 0;
 }
 
-/* ================================================= */
-/* === SEÇÃO DO CABEÇALHO / TOPO (A CORREÇÃO) === */
-/* ================================================= */
+
 
 .main-header {
   display: flex;
@@ -15,7 +12,7 @@ body {
   align-items: center;
   padding: 0 20px;
   height: 60px;
-  background-color: #ffffff; /* Fundo branco para o cabeçalho */
+  background-color: #ffffff; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
   position: sticky;
   top: 0;
@@ -48,12 +45,80 @@ body {
 .header-actions a { font-size: 20px; color: #65676b; }
 .header-profile img { border-radius: 50%; height: 40px; width: 40px; }
 
+.notification-icon-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
 
-/* ================================================= */
-/* === O RESTO DO SEU CÓDIGO (QUE JÁ ESTÁ ÓTIMO) === */
-/* ================================================= */
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  font-size: 22px;
+  color: #65676b;
+  transition: color 0.2s ease;
+}
 
-/* === CONTEÚDO PRINCIPAL COM GRID LAYOUT === */
+.icon-button:hover {
+  color: #0b3d61;
+}
+
+.notifications-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  z-index: 2000;
+}
+
+.dropdown-header {
+  font-weight: 700;
+  background-color: #0b3d61;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.notifications-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.notifications-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
+}
+
+.notifications-list li:hover {
+  background-color: #f0f2f5;
+}
+
+.notifications-list img {
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+}
+
+.notifications-list p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+
+
+
 .dashboard-content {
   display: grid;
   grid-template-columns: 260px minmax(600px, 1fr) 280px; /* colunas mais proporcionais */
@@ -64,7 +129,6 @@ body {
   position: relative;
 }
 
-/* === BARRA LATERAL ESQUERDA === */
 .left-sidebar {
   grid-column: 1 / 2;
   width: 100%;
@@ -77,7 +141,7 @@ body {
 .profile-card {
   background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 6px rgba(249, 249, 249, 0.08);
   text-align: center;
   overflow: hidden;
   padding-bottom: 20px;
@@ -137,12 +201,12 @@ body {
   color: #65676b;
 }
 
-/* === COLUNA DO FEED === */
+/* = COLUNA DO FEED  */
 .feed-column {
   grid-column: 2 / 3;
   display: flex;
   flex-direction: column;
-  align-items: center; /* centraliza horizontalmente */
+  align-items: center; 
   gap: 20px;
 }
 
@@ -152,7 +216,7 @@ body {
   padding: 15px 20px;
   width: 100%;
   max-width: 600px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
 }
 
 .create-post-input {
@@ -209,13 +273,12 @@ body {
 .fa-camera { color: #45bd62; }
 .fa-pen-alt { color: #1877f2; }
 
-/* === POSTS === */
 .feed-post {
   background-color: #fff;
   border-radius: 12px;
   width: 100%;
   max-width: 600px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 4px rgba(255, 255, 255, 0.1);
 }
 
 .post-header {
@@ -278,7 +341,6 @@ body {
   background-color: #f0f2f5;
 }
 
-/* === SIDEBAR DIREITA (Amigos + Conquistas) === */
 .right-sidebar {
   grid-column: 3 / 4;
   width: 100%;

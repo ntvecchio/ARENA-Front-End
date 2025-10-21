@@ -1,46 +1,13 @@
 import React from 'react';
-// Importe o NavLink para a navegação correta
-import { NavLink } from 'react-router-dom';
+import Header from '../Header/Header.jsx';
 import '../DashboardPage/DashboardPage.css';
-
-
 
 function DashboardPage() {
   return (
     <div className="dashboard-container">
-      {/* ===== CABEÇALHO COM A ESTRUTURA E ÍCONES CORRETOS ===== */}
-      <header className="main-header">
-        <div className="header-left">
-          <div className="header-logo">ARENA+</div>
-          <div className="header-search">
-            <i className="fas fa-search"></i>
-            <input type="text" placeholder="Pesquisar" />
-          </div>
-        </div>
+      <Header />
 
-        <div className="header-right">
-          <nav className="header-nav">
-            {/* Ícones corretos aqui */}
-            <NavLink to="/dashboard" end title="Home"><i className="fas fa-home"></i></NavLink>
-            <NavLink to="/mensagens" title="Chat"><i className="fas fa-comment-dots"></i></NavLink>
-            <NavLink to="/explorar" title="Explorar"><i className="fas fa-compass"></i></NavLink>
-            <NavLink to="/notificacoes" title="Notificações"><i className="fas fa-bell"></i></NavLink>
-          </nav>
-
-          <div className="header-actions">
-            <NavLink to="/configuracoes" title="Configurações"><i className="fas fa-cog"></i></NavLink>
-          </div>
-          <div className="header-profile">
-            <NavLink to="/perfil">
-              <img src="https://placehold.co/40x40/E86F3B/white?text=J" alt="Perfil" />
-            </NavLink>
-          </div>
-        </div>
-      </header>
-
-      {/* ===== CONTEÚDO PRINCIPAL ===== */}
       <main className="dashboard-content">
-        {/* --- LADO ESQUERDO --- */}
         <aside className="left-sidebar">
           <div className="profile-card">
             <div className="profile-banner"></div>
@@ -65,14 +32,10 @@ function DashboardPage() {
           </div>
         </aside>
 
-        {/* --- FEED CENTRAL --- */}
         <section className="feed-column">
           <div className="create-post-card">
             <div className="create-post-input">
-              <img
-                src="https://placehold.co/40x40/E86F3B/white?text=J"
-                alt="Seu Perfil"
-              />
+              <img src="https://placehold.co/40x40/E86F3B/white?text=J" alt="Seu Perfil" />
               <input type="text" placeholder="Comece uma publicação" />
             </div>
             <div className="create-post-actions">
@@ -106,27 +69,14 @@ function DashboardPage() {
           </div>
         </section>
 
-        {/* --- LADO DIREITO: Amigos e Conquistas --- */}
         <aside className="right-sidebar">
-           <div className="friends-section">
+          <div className="friends-section">
             <h4>Amigos Online</h4>
             <div className="friends-list">
-              <div className="friend">
-                <img src="https://placehold.co/40x40/E86F3B/white?text=A" alt="Ana" />
-                <span>Ana</span>
-              </div>
-              <div className="friend">
-                <img src="https://placehold.co/40x40/0B3D61/white?text=L" alt="Lucas" />
-                <span>Lucas</span>
-              </div>
-              <div className="friend">
-                <img src="https://placehold.co/40x40/338A6A/white?text=R" alt="Rafaela" />
-                <span>Rafaela</span>
-              </div>
-              <div className="friend">
-                <img src="https://placehold.co/40x40/555/white?text=P" alt="Pedro" />
-                <span>Pedro</span>
-              </div>
+              <div className="friend"><img src="https://placehold.co/40x40/E86F3B/white?text=A" alt="Ana" /><span>Ana</span></div>
+              <div className="friend"><img src="https://placehold.co/40x40/0B3D61/white?text=L" alt="Lucas" /><span>Lucas</span></div>
+              <div className="friend"><img src="https://placehold.co/40x40/338A6A/white?text=R" alt="Rafaela" /><span>Rafaela</span></div>
+              <div className="friend"><img src="https://placehold.co/40x40/555/white?text=P" alt="Pedro" /><span>Pedro</span></div>
             </div>
           </div>
 
@@ -149,4 +99,3 @@ function DashboardPage() {
 }
 
 export default DashboardPage;
-

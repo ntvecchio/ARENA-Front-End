@@ -1,7 +1,7 @@
 .register-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Alinha no topo */
+  align-items: flex-start; 
   width: 100%;
   min-height: 100vh;
   background-color: #f8f9fa;
@@ -25,7 +25,6 @@
 }
 
 .logo-placeholder {
-  /* Placeholder para a logo */
   font-size: 24px;
   font-weight: 700;
   color: #0b3d61;
@@ -39,7 +38,6 @@
   font-weight: 600;
 }
 
-/* Reutilizando e adaptando estilos de formulário */
 .form-group {
   margin-bottom: 20px;
 }
@@ -88,7 +86,6 @@
   height: 16px;
 }
 
-/* Reutilizando o estilo do botão de antes */
 .btn-secondary {
   width: 100%;
   padding: 14px;

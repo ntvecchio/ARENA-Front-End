@@ -1,4 +1,3 @@
-/* === CONTAINER GERAL === */
 .register-container {
   display: flex;
   justify-content: center;
@@ -7,10 +6,9 @@
   background: linear-gradient(135deg, #f0f4f8, #dbe4ee);
   padding: 40px 20px;
   box-sizing: border-box;
-  min-height: 100%; /* muda de 100vh para 100% */
+  min-height: 100%; 
 }
 
-/* === CARD DO FORMULÁRIO === */
 .register-form-wrapper {
   width: 100%;
   max-width: 500px;
@@ -22,7 +20,6 @@
   margin: 40px auto;
 }
 
-/* === CABEÇALHO === */
 .register-header {
   display: flex;
   justify-content: center;
@@ -43,7 +40,6 @@
   letter-spacing: 1px;
 }
 
-/* === TÍTULOS === */
 .register-form-wrapper h2 {
   text-align: center;
   font-size: 22px;
@@ -60,7 +56,6 @@
   font-weight: 400;
 }
 
-/* === FORMULÁRIO === */
 .form-group {
   margin-bottom: 15px;
 }
@@ -102,7 +97,6 @@
   flex: 1;
 }
 
-/* === TERMOS === */
 .terms-group {
   display: flex;
   align-items: flex-start;
@@ -117,7 +111,6 @@
   accent-color: #e86f3b;
 }
 
-/* === BOTÃO === */
 .btn-secondary {
   width: 100%;
   padding: 13px;
@@ -137,22 +130,19 @@
   transform: translateY(-1px);
 }
 
-/* === ANIMAÇÃO SUAVE === */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* === SCROLL GLOBAL === */
 html, body {
-  height: auto; /* deixa crescer conforme conteúdo */
+  height: auto; 
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
-/* === RESPONSIVIDADE === */
 @media (max-width: 600px) {
   .register-container {
     padding: 20px 10px;
