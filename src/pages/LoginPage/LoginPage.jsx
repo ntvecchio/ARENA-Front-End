@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LoginPage.css';
 import Logo from '../../assets/ovn.png'
+import LeftPanelImage from '../../assets/runners.png'
 
 function LoginPage() {
   const navigate = useNavigate();
@@ -33,8 +34,10 @@ function LoginPage() {
     <div className="login-page">
       <div className="login-container">
         <div className="left-panel">
-          <div className="runner-graphic"></div>
-        </div>
+          <div className="runner-graphic">
+            <img src={LeftPanelImage} alt="Descrição da imagem do painel esquerdo" className="left-panel-image" />
+       </div>
+    </div>
 
         <div className="right-panel">
           <div className="login-form">
