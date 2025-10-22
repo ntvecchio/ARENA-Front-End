@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Header from '../../components/Header/Header.jsx';
+import Header from '../../components/header/Header.jsx';
 import './AthleteRegisterPage.css';
 
 function AthleteRegisterPage() {

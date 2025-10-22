@@ -15,7 +15,6 @@ function ProfileSelectionPage() {
       <div className="left-panel">
         <div className="runner-graphic">
           <h1>Bem-vindo ao Arena+</h1>
-          <p>Escolha seu perfil e comece sua jornada esportiva</p>
         </div>
       </div>
 

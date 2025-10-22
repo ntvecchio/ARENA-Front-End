@@ -236,6 +236,7 @@ body {
   padding: 10px 15px;
   border-radius: 20px;
   outline: none;
+  color: #000000;
 }
 
 .create-post-actions {
@@ -424,4 +425,31 @@ body {
   from { transform: translateX(100%); }
   to { transform: translateX(-100%); }
 }
+.follow-button {
+  background-color: #0b3d61;     /* Azul principal do site */
+  color: #ffffff;                /* Texto branco */
+  border: none;                  /* Remove borda padrão */
+  
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  margin-left: auto;
+}
 
+.follow-button:hover {
+  background-color: #0d4f80;     /* Azul um pouco mais escuro no hover */
+  transform: scale(1.03);        /* Leve zoom ao passar o mouse */
+}
+
+.follow-button:active {
+  background-color: #09324d;     /* Azul mais profundo no clique */
+  transform: scale(0.98);
+}
+
+.follow-button:focus {
+  outline: none;
+}

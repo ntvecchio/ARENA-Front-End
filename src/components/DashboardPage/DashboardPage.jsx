@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../Header/Header.jsx';
+import Header from '../header/Header.jsx'; // ✅ correto
 import '../DashboardPage/DashboardPage.css';
 
 function DashboardPage() {
